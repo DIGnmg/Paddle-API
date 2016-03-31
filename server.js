@@ -2,15 +2,16 @@
 
 const Hapi = require('hapi');
 
+//Database
+const db = require('./adapters/db.js');
+
 //Plug-ins
 const Players = require('./routes/players.js');
 const Matches = require('./routes/matches.js');
 const GameTypes = require('./routes/gameTypes.js');
+const Leagues = require('./routes/leagues.js');
 
-//Database
-const db = require('./adapters/db.js')
-
-const plugins = [Players, Matches, GameTypes];
+const plugins = [Players, Matches, GameTypes, Leagues];
 
 const server = new Hapi.Server({ debug: { request: ['error'] } });
 server.connection({ port: 3000 });

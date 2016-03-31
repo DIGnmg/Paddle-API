@@ -8,20 +8,17 @@ const Player = require('../../models').Player;
 const routeConfig = {
   pre: [],
   handler: function(request, reply) {
-    const newPlayer = new Player(request.payload);
+    const player = request.params;
+    const payload = request.payload;
     
-    Player.findOne(request.payload, (err, player) =>{
-      console.log(player);
+    Player.findByIdAndUpdate(player.id, { $set: payload}, (err, player) => {
       if (player) {
-        return reply('Player already created')
+        return reply(player);
       } else {
-        newPlayer.save((err) => {
-          if (err) return reply(err)
-          return reply('Created New Player');
-        });
+        return reply(err);
       }
     })
-  
+
   },
   description: 'Get a list of players',
   notes: 'Get a list of players',

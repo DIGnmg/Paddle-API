@@ -11,7 +11,7 @@ const routeConfig = {
   handler: function(request, reply) {
     const match = request.payload;
     const players = request.payload.players;
-    console.log(players);
+
     Match.create(match, (err, match) => {
       if (err != null) {
         return reply('There was an Error!', err);

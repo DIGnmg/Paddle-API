@@ -2,6 +2,7 @@
 
 const Joi = require('joi');
 const mongoose = require('mongoose');
+
 const Player = require('../../models').Player;
 
 const routeConfig = {
@@ -9,14 +10,14 @@ const routeConfig = {
   handler: function(request, reply) {
     const player = request.params;
 
-    Player.findById(player.id).populate('match').exec(function(err, player) {
+    Player.findByIdAndRemove(player.id, function(err, player) {
       if (err) {
         return reply('there was an error', err)
       } else {
-        return reply(player);
+        return reply('Removed Player');
       }
-    }); 
-
+    });
+    
   },
   description: 'Get a list of players',
   notes: 'Get a list of players',

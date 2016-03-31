@@ -23,8 +23,13 @@
 *	gameTypeId: Int
 * 	gameTypeDescription: String
 *	gameTypeName: String
+*	pointLimit: Int
 
 ### League Model
 *	leagueId: Int
+*	leagueName: String
+*	leagueType: String
 * 	leagueDescription: String
+* 	leagueLength: Int
 *	leagueCreatedDate: Date
+*	players: Array
