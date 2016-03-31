@@ -12,7 +12,8 @@
     "hapi": "^13.0.0",
     "joi": "^8.0.4",
     "knex": "^0.10.0",
-    "mariasql": "^0.2.5"
+    "mariasql": "^0.2.5",
+    "mongoose": "^4.4.7"
   },
   "devDependencies": {
     "chai": "^3.5.0",

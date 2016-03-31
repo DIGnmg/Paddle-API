@@ -24,9 +24,7 @@
 * 	gameTypeDescription: String
 *	gameTypeName: String
 
-### league Model
+### League Model
 *	leagueId: Int
 * 	leagueDescription: String
 *	leagueCreatedDate: Date
-
-
