@@ -1,7 +1,7 @@
 'use strict';
 
 // getting-started.js
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/test', (err)=>{
   if (err) {
     console.log(err);

@@ -28,8 +28,14 @@ const routeConfig = {
   tags: ['api', 'players'],
   validate: {
     payload: {
-      firstName: Joi.string().required(),
-      lastName: Joi.string().required()
+      email: Joi.string().required(),
+      password: Joi.string().required(),
+      profile:{
+        firstName: Joi.string().required(),
+        lastName: Joi.string().required(),
+        tagName: Joi.string().required()
+      },
+      isAdmin: Joi.boolean()
     }
   }
 };

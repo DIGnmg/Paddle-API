@@ -1,9 +1,9 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
-var GameTypeSchema = Schema({
+let GameTypeSchema = Schema({
         gameTypeName: { type:String, default: '' },
         gameTypeDescription: { type:String, default: '' },
         pointLimit: {type: Number, default: 0 },

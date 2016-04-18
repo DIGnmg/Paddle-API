@@ -1,9 +1,9 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
-var MatchSchema = Schema({
+let MatchSchema = Schema({
         winner: { 
         	type: Schema.Types.ObjectId,
 		    ref: 'Player' 

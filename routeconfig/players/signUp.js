@@ -25,14 +25,8 @@ const routeConfig = {
   tags: ['api', 'players'],
   validate: {
     payload: {
-      email: Joi.string(),
-      password: Joi.string(),
-      profile:{
-        firstName: Joi.string(),
-        lastName: Joi.string(),
-        tagName: Joi.string()
-      },
-      isAdmin: Joi.boolean()
+      firstName: Joi.string(),
+      lastName: Joi.string()
     }
   }
 };

@@ -13,7 +13,7 @@ const routeConfig = {
       if (err) {
         return reply('there was an error', err)
       } else {
-        return reply(player);
+        return reply(player, request.auth.credentials.name);
       }
     }); 
 

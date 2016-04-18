@@ -1,9 +1,9 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
-var LeagueSchema = Schema({
+let LeagueSchema = Schema({
 		leagueName: { type: String, default: ''},
         leagueType: { type: String, default: ''},
         leagueDescription: { type: String, default: ''},
