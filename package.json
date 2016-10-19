@@ -11,6 +11,7 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "hapi": "^13.0.0",
+    "hapi-auth-cookie": "^6.1.1",
     "joi": "^8.0.4",
     "knex": "^0.10.0",
     "mariasql": "^0.2.5",
