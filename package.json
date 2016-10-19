@@ -1,0 +1,24 @@
+{
+  "name": "paddle-api",
+  "version": "1.0.0",
+  "description": "backend api for ping pong scoring application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nathanael Gethers",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "hapi": "^13.0.0",
+    "hapi-auth-cookie": "^6.1.1",
+    "joi": "^8.0.4",
+    "knex": "^0.10.0",
+    "mariasql": "^0.2.5",
+    "mongoose": "^4.4.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
